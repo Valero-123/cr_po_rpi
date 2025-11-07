@@ -5,17 +5,15 @@ import {createElement} from '../framework/render.js';
 function createAddBookComponentTemplate() {
     return (
         `<form id="book-form">
-            <h2>Добавить новую книгу</h2>
-                <input type="text" id="book-title" placeholder="Название книги" required />
+            <h2>Добавить новую привычку</h2>
+                <input type="text" id="book-title" placeholder="Название привычки" required />
                 <input type="text" id="book-author" placeholder="Автор" required />
                 <select id="book-genre" required>
                     <option value="">Выбрать жанр</option>
-                    <option value="Fiction">Художественная</option>
-                    <option value="Science">Научная</option>
-                    <option value="Fantasy">Фантастика</option>
-                    <option value="Biography">Биография</option>
+                    <option value="Fiction">Выполнено</option>
+                    <option value="Science">Не выполнено</option>
                 </select>
-                <button class = "add-book-button" type="submit">Добавить книгу</button>
+                <button class = "add-book-button" type="submit">Добавить привычку</button>
             </form>`
       );
 }
@@ -37,4 +35,5 @@ export default class AddBookComponent extends AbstractComponent{
     evt.preventDefault();
     this.#handleClick();
   };
+
 }

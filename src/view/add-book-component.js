@@ -7,7 +7,7 @@ function createAddBookComponentTemplate() {
         `<form id="book-form">
             <h2>Добавить новую привычку</h2>
                 <input type="text" id="book-title" placeholder="Название привычки" required />
-                <input type="text" id="book-author" placeholder="Автор" required />
+                <input type="text" id="book-author" placeholder="Статус" required />
                 <select id="book-genre" required>
                     <option value="">Выбрать жанр</option>
                     <option value="Fiction">Выполнено</option>
@@ -37,3 +37,4 @@ export default class AddBookComponent extends AbstractComponent{
   };
 
 }
+

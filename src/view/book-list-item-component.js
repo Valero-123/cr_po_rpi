@@ -2,12 +2,13 @@ import { AbstractComponent } from '../framework/view/abstract-component.js';
 import {createElement} from '../framework/render.js'; 
 
 
-function createBookListTemplate(author, name) {
+function createBookListTemplate(author, name, genre) {
     return (
         `
         <div class = "book_list_item">
             <p>Название: ${name}</p>
             <p>Автор: ${author}</p>
+            <p>Статус: ${genre}</p>
         </div>
         `
       );
@@ -39,3 +40,4 @@ export default class BookListItemComponent extends AbstractComponent{
   };
 
 }
+

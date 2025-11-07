@@ -7,8 +7,7 @@ function createBookListTemplate(author, name, genre) {
         `
         <div class = "book_list_item">
             <p>Название: ${name}</p>
-            <p>Автор: ${author}</p>
-            <p>Статус: ${genre}</p>
+            <p>Статус: ${author}</p>
         </div>
         `
       );
@@ -40,4 +39,5 @@ export default class BookListItemComponent extends AbstractComponent{
   };
 
 }
+
 
